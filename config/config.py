@@ -2,7 +2,7 @@ BOT_TOKEN: str = ""
 SPOTIFY_ID: str = ""
 SPOTIFY_SECRET: str = ""
 
-BOT_PREFIX = "$"
+BOT_PREFIX = "-"
 
 EMBED_COLOR = 0x4dd4d0  #replace after'0x' with desired hex code ex. '#ff0188' >> '0xff0188'
 
@@ -82,5 +82,9 @@ HELP_SHUFFLE_SHORT = "Shuffle the queue"
 HELP_SHUFFLE_LONG = "Randomly sort the songs in the current queue"
 HELP_CHANGECHANNEL_SHORT = "Change the bot channel"
 HELP_CHANGECHANNEL_LONG = "Change the bot channel to the VC you are in"
-
+HELP_PURGE_SHORT = "Purge last n messages."
+HELP_PURGE_LONG ="""Purge last n messages or nmessages with a word. Requires Manage Messages permission. Ex: purge 20 - deletes the last 20 messages in a channel sent by anyone.
+                                                                                                            purge 20 everyone stuff - deletes any messages in the last 20 messages that contain the word 'stuff'.
+                                                                                                            purge 20 @appu1232 - deletes any messages in the last 20 messages that were sent by appu1232.
+                                                                                                            purge 20 "@appu1232, LyricLy, 435254873976547426" hello - deletes any messages in the last 20 messages that were sent by appu1232, LyricLy or thecommondude that contain the word 'stuff'."""
 ABSOLUTE_PATH = '' #do not modify
